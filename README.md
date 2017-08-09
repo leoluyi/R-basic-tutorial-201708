@@ -1,8 +1,8 @@
 # R-basic-tutorial-201708
 
-- Week 1: [Material](Week1.html)
-- Week 2: [Material](Week2.html)
-- Week 3: [Material](Week3.html)
+- Week 1: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week1.html)
+- Week 2: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week2.html)
+- Week 3: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week3.html)
 
 ## References
 
