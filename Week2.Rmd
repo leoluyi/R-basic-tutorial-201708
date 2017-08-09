@@ -1,0 +1,23 @@
+---
+title: "Week2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  eval = FALSE
+)
+```
+
+## Functions in R
+
+A typical function in R may look like:
+
+```{r}
+f <- function(par1, par2, ...) {
+    # Some magic happened
+    return(sth)    # return something
+}
+```
+
