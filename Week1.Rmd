@@ -349,7 +349,7 @@ summary(iris)
 2. Load the [Pokemon data](data/pokemons.csv) into `data.frame`
 3. Find the heaviest one of 151 pokemons
 4. How many pokemons of which `Type1` are `"FIRE"`
-5. Find the pokemon of `Type1` and has the largest `BaseAttack` value
+5. Find the pokemon of which `Type1` are `"POISON"` and has the largest `BaseAttack` value
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
 library(readr)
