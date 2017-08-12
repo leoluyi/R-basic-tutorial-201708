@@ -1,8 +1,12 @@
 # R-basic-tutorial-201708
 
-- Week 1: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week1.html)
-- Week 2: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week2.html)
-- Week 3: [Material](http://leoluyi.github.io/R-basic-tutorial-201708/Week3.html)
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+| Course | Material | Sample Code | Assignments |
+|:---|:---:|:---:|:---:|
+| Week 1 | <a href="Week1.html"><span class="fa fa-link"></span></a> | <a href="Week1.R"><span class="fa fa-file-code-o"></span></a> |  |
+| Week 2 | <a href="Week2.html"><span class="fa fa-link"></span></a> | <a href="Week2.R"><span class="fa fa-file-code-o"></span></a> |  |
+| Week 3 | <a href="Week3.html"><span class="fa fa-link"></span></a> | <a href="Week3.R"><span class="fa fa-file-code-o"></span></a> |  |
 
 ## References
 
