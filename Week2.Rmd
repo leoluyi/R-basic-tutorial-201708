@@ -1,23 +1,93 @@
 ---
 title: "Week2"
-output: html_document
+output:
+  html_document: 
+    toc: yes
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   echo = TRUE,
-  eval = FALSE
+  eval = TRUE,
+  message=FALSE, 
+  warning=FALSE,
+  collapse = TRUE
 )
 ```
 
-## Functions in R
+## Assignment for Week 1
 
-A typical function in R may look like:
+1. Check this video: https://www.youtube.com/watch?v=0xVqLJe9_CY&feature=youtu.be
+2. Load the [Pokemon data](data/pokemons.csv) into `data.frame`
+3. Find the heaviest one of 151 pokemons
+4. How many pokemons of which `Type1` are `"FIRE"`
+5. Find the pokemon of which `Type1` are `"POISON"` and has the largest `BaseAttack` value
+
+```{r, eval=TRUE}
+library(dplyr)
+library(readr)
+
+# Read data
+pokemon <- read_csv("data/pokemons.csv")
+print(pokemon)
+
+# Find the heaviest one of 151 pokemons
+pokemon %>% arrange(desc(PokedexWeightKg)) %>% head(3)
+
+# How many pokemons of which Type1 are "FIRE"
+pokemon %>% filter(Type1 == "FIRE")
+
+# Find the pokemon of which Type1 are "POISON" and has the largest BaseAttack value
+pokemon %>% 
+  select(Identifier, Type1, BaseAttack) %>% # select columns
+  filter(Type1 == "POISON") %>% # filter Type1
+  arrange(desc(BaseAttack)) %>%  # arrange the order by BaseAttack
+  head(5)
+```
+
+## Counting
 
 ```{r}
-f <- function(par1, par2, ...) {
-    # Some magic happened
-    return(sth)    # return something
-}
+pokemon$Type1 %>%  # $: selecting variable
+  table
 ```
+
+## Graphic is more intutive
+
+```{r}
+par(family="STHeiti") # 顯示中文字體 Mac user only
+
+pokemon$Type1 %>% 
+  table %>% 
+  sort(decreasing = F) %>% 
+  barplot(las=1, horiz=TRUE)
+
+pokemon$Type1 %>% 
+  table %>% 
+  sort(decreasing = T) %>% 
+  pie(clockwise = T)
+```
+
+**Try:**
+
+- Show the `CandyFamily` pie plot
+
+## Histogram
+
+```{r}
+# The distribution of Pokemons' Weight
+pokemon$PokedexWeightKg %>% 
+  hist
+
+# More setting
+pokemon$PokedexWeightKg %>% 
+  hist(breaks=20, # number of bins
+       col="lightblue",
+       prob=TRUE,
+       xlab="Pokemon Weight",
+       main="Historgram")
+```
+
+
 
