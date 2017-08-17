@@ -300,9 +300,10 @@ Load the `pokemon` dataset by
 ```{r, eval=F}
 library(dplyr)
 pokemon <- readr::read_csv("https://github.com/leoluyi/R-basic-tutorial-201708/raw/gh-pages/data/pokemons.csv")
+View(pokemon)
 ```
 
-1. Plot the scatter plot of variables: `PokedexHeightM` and `PokedexWeightKg`. Is there any positive or negative relationship between those variables? What's the coorelation coeficient?
+1. Plot the scatter plot of variables: `PokedexHeightM` and `PokedexWeightKg`. Is there any positive or negative relationship between those variables? What's the coorelation coefficient?
 2. Show the rows of `pokemon` data.frame of condition: `BaseAttack` is greater than `BaseStamina`. (Hint: use `filter()` in `dplyr`)
 3. Write an `if` statement for `pokemon$BaseAttack`: Code an if statement that prints "Mean BaseAttack is greater than 150!" to the console if the mean of `BaseAttack` variable exceeds 150.
 
