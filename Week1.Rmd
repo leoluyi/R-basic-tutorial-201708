@@ -1,5 +1,5 @@
 ---
-title: "Week2: Exploratory Data Analysis"
+title: "Week1: Intro to R"
 output:
   html_document: 
     toc: yes
@@ -87,7 +87,7 @@ rm(pkg_new, pkg_list)
 | Run current line/selection  | <kbd>Ctrl</kbd>+<kbd>Enter</kbd> | <kbd>⌘</kbd>+<kbd>↩︎</kbd> |
 | Comment/uncomment current line/selection | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>C</kbd> |
 | Reindent lines              | <kbd>Ctrl</kbd>+<kbd>I</kbd> | <kbd>⌘</kbd>+<kbd>I</kbd> |
-| Insert pipe operator | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>M</kbd>
+| Insert pipe operator `%>%` | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>M</kbd>
 </div>
 
 <img src="img/rstudio_shortcut.png">
