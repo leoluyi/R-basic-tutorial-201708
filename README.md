@@ -4,9 +4,11 @@
 
 | Course | Material | Sample Code | Assignments |
 |:---|:---:|:---:|:---:|
-| Week 1 | <a href="Week1.html"><span class="fa fa-link"></span></a> | <a href="Week1.R"><span class="fa fa-file-code-o"></span></a> |  |
+| Week 1 | <a href="Week1.html"><span class="fa fa-link"></span></a> | <a href="Week1.R"><span class="fa fa-file-code-o"></span></a> | <a href="Assignment1.R"><span class="fa fa-file-code-o"></span></a> |
 | Week 2 | <a href="Week2.html"><span class="fa fa-link"></span></a> | <a href="Week2.R"><span class="fa fa-file-code-o"></span></a> |  |
 | Week 3 | <a href="Week3.html"><span class="fa fa-link"></span></a> | <a href="Week3.R"><span class="fa fa-file-code-o"></span></a> |  |
+
+- [共筆](https://hackmd.io/MwFgDAHATBIgtANgMYHYzxIgpgE3hMsAKzy4BmwuwARjcVMRUA==?both)
 
 ## References
 
