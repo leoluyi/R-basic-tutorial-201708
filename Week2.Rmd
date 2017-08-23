@@ -174,7 +174,7 @@ summary(pokemon)
 
 ### Equality
 
-The most basic form of comparison is equality. Let's briefly recap its syntax. The following statements all evaluate to TRUE (feel free to try them out in the console).
+The most basic form of comparison is equality. Let's briefly recap its syntax. The following statements all evaluate to `TRUE` (feel free to try them out in the console).
 
 ```{r, eval=FALSE}
 3 == (2 + 1)
@@ -206,7 +206,7 @@ TRUE != FALSE
 
 ### Greater and less than
 
-Apart from equality operators, Filip also introduced the less than and greater than operators: < and >. You can also add an equal sign to express less than or equal to or greater than or equal to, respectively. Have a look at the following R expressions, that all evaluate to FALSE:
+Apart from equality operators, Filip also introduced the less than and greater than operators: `<` and `>`. You can also add an equal sign to express less than or equal to or greater than or equal to, respectively. Have a look at the following R expressions, that all evaluate to `FALSE`:
 
 ```{r, eval=FALSE}
 (1 + 2) > 4
@@ -252,7 +252,7 @@ FALSE | TRUE
 3 < 4 | 7 < 6
 ```
 
-> Watch out: 3 < x < 7 to check if x is between 3 and 7 will not work; you'll need 3 < x & x < 7 for that.
+> Watch out: `3 < x < 7` to check if `x` is between 3 and 7 will not work; you'll need `3 < x & x < 7` for that.
 
 **Try:**
 

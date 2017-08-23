@@ -544,7 +544,7 @@ abline(lm(BaseAttack ~ BaseDefense, data = pokemon), col=&quot;red&quot;)</code>
 <h2>Introduction to Programming</h2>
 <div id="equality" class="section level3">
 <h3>Equality</h3>
-<p>The most basic form of comparison is equality. Let’s briefly recap its syntax. The following statements all evaluate to TRUE (feel free to try them out in the console).</p>
+<p>The most basic form of comparison is equality. Let’s briefly recap its syntax. The following statements all evaluate to <code>TRUE</code> (feel free to try them out in the console).</p>
 <pre class="r"><code>3 == (2 + 1)
 &quot;intermediate&quot; != &quot;r&quot;
 TRUE != FALSE
@@ -569,7 +569,7 @@ TRUE != FALSE
 </div>
 <div id="greater-and-less-than" class="section level3">
 <h3>Greater and less than</h3>
-<p>Apart from equality operators, Filip also introduced the less than and greater than operators: &lt; and &gt;. You can also add an equal sign to express less than or equal to or greater than or equal to, respectively. Have a look at the following R expressions, that all evaluate to FALSE:</p>
+<p>Apart from equality operators, Filip also introduced the less than and greater than operators: <code>&lt;</code> and <code>&gt;</code>. You can also add an equal sign to express less than or equal to or greater than or equal to, respectively. Have a look at the following R expressions, that all evaluate to <code>FALSE</code>:</p>
 <pre class="r"><code>(1 + 2) &gt; 4
 &quot;dog&quot; &lt; &quot;Cats&quot;
 TRUE &lt;= FALSE</code></pre>
@@ -611,7 +611,7 @@ facebook &lt;- c(17, 7, 5, 16, 8, 13, 14)
 <pre class="r"><code>3 &lt; 4 | 7 &lt; 6</code></pre>
 <pre><code>#&gt; [1] TRUE</code></pre>
 <blockquote>
-<p>Watch out: 3 &lt; x &lt; 7 to check if x is between 3 and 7 will not work; you’ll need 3 &lt; x &amp; x &lt; 7 for that.</p>
+<p>Watch out: <code>3 &lt; x &lt; 7</code> to check if <code>x</code> is between 3 and 7 will not work; you’ll need <code>3 &lt; x &amp; x &lt; 7</code> for that.</p>
 </blockquote>
 <p><strong>Try:</strong></p>
 <pre class="r"><code># The linkedin and last variable are already defined for you
