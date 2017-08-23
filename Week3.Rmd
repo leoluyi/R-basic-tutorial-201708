@@ -1,0 +1,118 @@
+---
+title: "Week3: Control flow and functions"
+output:
+  html_document: 
+    toc: yes
+    toc_float: yes
+    editor_options: 
+      chunk_output_type: console
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  eval = TRUE,
+  message=FALSE, 
+  warning=FALSE,
+  comment = "#>"
+)
+```
+
+
+## Loops
+
+### For-loop
+
+The for loop can be used to repeat a set of instructions, and it is used when you know in advance the values that the loop variable will have each time it goes through the loop. The basic format for the for loop is for(var in seq) expr
+
+```{r}
+for (x in 1:10) {
+  cat(x^2, "\n")
+}
+```
+
+**Try:**
+
+Print the city names line-by-line
+
+```{r, eval=FALSE}
+cities <- c("New York", "Paris",
+            "London", "Tokyo",
+            "Rio de Janeiro", "Cape Town")
+
+for(var in seq) {
+  expr
+}
+```
+
+**Advanced:**
+
+Print index and cicy names
+
+```{r}
+cities <- c("New York", "Paris",
+            "London", "Tokyo",
+            "Rio de Janeiro", "Cape Town")
+
+for(i in 1:length(cities)) {
+  cat(i, cities[i], "\n")
+}
+```
+
+## Writing a function in R
+
+`my_fun` is the variable that you want to assign your function to, arg1 and arg2 are arguments to the function. 
+
+```{r, eval=FALSE}
+my_fun <- function(arg1, arg2) {
+  # body
+}
+```
+
+**Try:**
+
+1. Using the function template, write a function `ratio()` that takes arguments `x` and `y` and returns their ratio, `x / y`.
+2. Check your function by calling it with the arguments 3 and 4.
+
+```{r, eval=FALSE}
+# Define ratio() function
+ratio <- function(arg1, arg2) {
+  arg1 / arg2
+}
+
+# Call ratio() with arguments 3 and 4
+ratio(3, 4)
+```
+
+You probably either did `ratio(3, 4)`, which relies on **matching by position**, or `ratio(x = 3, y = 4)`, which relies on **matching by name**.
+
+**Conventions to call a function**
+
+1. For functions you and others use often, it's okay to use positional matching for the first one or two arguments. (These are usually the data to be computed on)
+2. Beyond the first couple of arguments you should always use matching by name.
+3. . Notice that when you call a function, you should place a space around `=` in function calls,
+
+
+**Try:**
+
+Here's a rather cryptic call to `mean()`. Rewrite the call to follow the best practices we just discussed. Use the natural ordering of the arguments, which you can find by typing ?mean in the console.
+
+```{r, eval=FALSE}
+# Rewrite the call to follow best practices
+mean(0.1,x=c(1:9, NA),TRUE)
+```
+
+
+**Quiz**
+
+```{r, eval=FALSE}
+f <- function(x) {
+  if (TRUE) {
+    return(x + 1)
+  }
+  x
+}
+```
+
+What will be the result of calling `f(2)`?
+
